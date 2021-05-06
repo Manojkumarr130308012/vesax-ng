@@ -1,0 +1,43 @@
+<app-navbar-style-one></app-navbar-style-one>
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitleContent;" style="background-image: url({{Content.backgroundImage}});">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>{{Content.title}}</h2>
+            <ul>
+                <li><a routerLink="/">Home</a></li>
+                <li>{{Content.title}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Timeline Area -->
+<section class="timeline-area ptb-100">
+    <div class="container">
+        <div class="section-title" *ngFor="let Title of sectionTitle;">
+            <h2>{{Title.title}}</h2>
+            <p style="text-align: justify;">{{Title.paragraph}}</p>
+        </div>
+    
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let Content of howItWorksBox;">
+                <div class="single-how-it-works-box">
+                    <div class="icon">
+                        <i class="{{Content.icon}}"></i>
+                    </div>
+                    <h3>{{Content.title}}</h3>
+                    <p  style="text-align: justify;">{{Content.paragraph}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Timeline Area -->
+
+<!-- <section class="how-it-works-area pt-100 pb-70 bg-f9f9f9">
+    <app-how-it-works></app-how-it-works>
+</section> -->
+
+<app-footer-style-one></app-footer-style-one>

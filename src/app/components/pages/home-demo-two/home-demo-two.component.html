@@ -1,0 +1,44 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<app-hometwo-banner></app-hometwo-banner>
+
+<section class="category-area pt-100 pb-70">
+    <app-category></app-category>
+</section>
+
+<app-hometwo-listings></app-hometwo-listings>
+
+<app-hometwo-destinations></app-hometwo-destinations>
+
+<section class="feedback-area bg-image ptb-100">
+    <app-feedback-style-one></app-feedback-style-one>
+</section>
+
+<app-hometwo-events></app-hometwo-events>
+
+<section class="timeline-area ptb-100">
+    <div class="container">
+        <div class="section-title" *ngFor="let Title of sectionTitle;">
+            <h2>{{Title.title}}</h2>
+            <p style="text-align: justify;">{{Title.paragraph}}</p>
+        </div>
+    
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let Content of howItWorksBox;">
+                <div class="single-how-it-works-box">
+                    <div class="icon">
+                        <i class="{{Content.icon}}"></i>
+                    </div>
+                    <h3>{{Content.title}}</h3>
+                    <p  style="text-align: justify;">{{Content.paragraph}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-hometwo-blog></app-hometwo-blog>
+
+<app-app-download></app-app-download>
+
+<app-footer-style-one></app-footer-style-one>
